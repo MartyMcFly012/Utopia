@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utopia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url(Galaxy2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh; /* Set the height of the body to full viewport height */
+            display: flex; /* Enable flexbox layout */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex-direction: column; /* Arrange elements vertically */
+        }
+
+        .enter-text {
+            color: white;
+            font-size: 4rem;
+            text-align: center;
+            animation: fadeInOut 2s infinite; /* Apply the fadeInOut animation */
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .door-button {
+            border: 4px solid transparent;
+            background-image: url(door-border.png);
+            background-size: cover;
+            width: 200px;
+            height: 80px;
+            color: #333;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-top: 10px;
+            margin: 20px;
+            transition: border-color 0.5s;
+        }
+
+        .door-button:hover {
+            border-color: lightskyblue; /* Change border color on hover */
+        }
+    </style>
+</head>
+<body>
+    <title></title>
+    <div class="enter-text">Enter</div>
+    <a href="interior.html" class="door-button">Open the Door</a>
+    <div class="container"></div>
+</body>
+</html>
